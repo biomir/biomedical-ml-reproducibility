@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomedical-ml-reproducibility"
+version = "0.1.0"
+description = "Reference utilities for reproducible biomedical ML experiments."
+requires-python = ">=3.10"
+authors = [{name = "Yonathan Emmanuel"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+ml = ["numpy>=1.24", "scikit-learn>=1.3"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
