@@ -4,12 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "biomedical-ml-reproducibility"
-version = "0.1.0"
+version = "0.2.0"
 description = "Reference utilities for reproducible biomedical ML experiments."
+readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Yonathan Emmanuel"}]
 license = {text = "MIT"}
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/biomir"
+Repository = "https://github.com/biomir/biomedical-ml-reproducibility"
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
